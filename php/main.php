@@ -6,7 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="../css/login/login.css">
 </head>
 <body>
-	<div id="main_div"></div>
-	<a href="logout.php" style="color: white">Log Off</a>
+	<div id="main_div_2"></div>
+
 </body>
 </html>
