@@ -8,5 +8,6 @@
 <body>
 	<div id="main_div_2"></div>
 
+	<a href="logout.php" style="color: white">Log Off</a>
 </body>
 </html>
