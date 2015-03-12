@@ -1,0 +1,48 @@
+div#login {
+	width: 70%;
+	margin-top: 250px;
+	margin-left: 15%;
+	margin-right: 15%;
+	padding-bottom: 100px;
+}
+
+form {
+	width: 70%;
+	margin-left: 30%;
+}
+
+input {
+	background-color: black;
+	color: white;
+}
+
+span {
+	color: white;
+}
+
+input#username {
+	margin-left: 24px;
+}
+
+input#password {
+	margin-left: 13px;
+}
+
+button#login_btn {
+	height: 28px;
+	width: 100px;
+	color: white;
+	background-image: url("../../images/login_btn.png");
+	background-size: 100px;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	border: 0px;
+	cursor: pointer;
+	margin-left: 17%;
+	margin-right: 15%;
+}
+
+div#login_verify {
+	color: white;
+	margin-left: 40%;
+}

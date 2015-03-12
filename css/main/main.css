@@ -1,0 +1,23 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	background-image: url("../../images/background_air.jpg");
+	background-repeat: none;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+div#main_div {
+	width: 70%;
+	height: 500px;
+	background-color: black;
+	opacity: .6;
+	margin-top: -190px;
+	margin-left: 15%;
+	margin-right: 15%;
+	position: absolute;
+	z-index: -1;
+}
