@@ -25,7 +25,7 @@
 <?php
 
 	if (isset($_SESSION['user_id']) && !empty($_SESSION['user_id'])){
-		header('Location: php/main.php');
+		header('Location: php/home.php');
 	}
 
 	else{

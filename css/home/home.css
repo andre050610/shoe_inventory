@@ -1,0 +1,27 @@
+/*************** CSS for the Home Page ***********************************************************/
+
+div#display_info {
+	width: 70%;
+	margin-top: 30px;
+	margin-left: 15%;
+	margin-right: 15%;
+	position: absolute;
+}
+
+div#logo_name {
+	color: white;
+	display: inline-block;
+	float: left;
+	margin-left: 380px;
+	margin-top: 40px;
+}
+
+img#logoff {
+	height: 40px;
+	width: 40px;
+	display: inline-block;
+	float: left;
+	margin-top: 40px;
+	margin-left: 300px;
+}
+
