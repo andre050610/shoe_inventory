@@ -1,6 +1,6 @@
 <?php
-	require 'php/core.inc.php';
-	require 'php/connect.inc.php';
+	require 'php/inc/core.inc.php';
+	require 'php/inc/connect.inc.php';
 ?>	
 
 <!DOCTYPE html>
@@ -29,7 +29,7 @@
 	}
 
 	else{
-		include 'php/login.inc.php';
+		include 'php/inc/login.inc.php';
 	}
 ?>
 	</div>

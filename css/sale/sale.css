@@ -7,13 +7,37 @@ div#sale {
 	margin-top: 15px;
 	margin-left: 220px;
 	z-index: 2;
-	background-color: white;
+	background-color: #4D0F0F;
+	opacity: .9;
 }
 
 h1 {
 	text-align: center;
+	color: white;
+}
+
+span {
+	color: white;
+	margin-left: 100px;
+}
+
+select.sale {
+	width: 120px;
+	background-color: black;
+	color: white;
+	border-radius: 5px;
+	border: 0px;
+	outline: 0;
 }
 
 select#shoe {
 	margin-left: 50px;
+}
+
+select#size {
+	margin-left: 35px;
+}
+
+select#amount {
+	margin-left: 30px;
 }
