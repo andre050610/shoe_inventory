@@ -1,0 +1,28 @@
+div#info {
+	width: 70%;
+	margin-top: 150px;
+	margin-left: 15%;
+	margin-right: 15%;
+	position: absolute;
+}
+
+ul {
+	width: 200px;
+	float: left;
+	display: inline-block;
+	z-index: 1;
+	position: fixed;
+}
+
+a.menu {
+	text-decoration: none;
+	color: white;
+}
+
+li {
+	padding: 30px;
+	border: 1px solid white;
+	background-color: #141A1A;
+	list-style-type: none;
+	text-align: center;
+}

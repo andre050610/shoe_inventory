@@ -5,7 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="../css/main/main.css">
 	<link rel="stylesheet" type="text/css" href="../css/main/header.css">
 	<link rel="stylesheet" type="text/css" href="../css/main/menu.css">
-	<link rel="stylesheet" type="text/css" href="../css/home/home.css">
+	<link rel="stylesheet" type="text/css" href="../css/sale/sale.css">
 	<script type="text/javascript" src="../js/jquery/jquery2.js"></script>
 	<script type="text/javascript" src="../js/jquery/jquery-ui.js"></script>
 	<script type="text/javascript" src="../js/menu/menu.js"></script>
@@ -31,7 +31,12 @@
 				<li>Notas</li>
 			</a>
 		</ul>
-		<div id="home_img"></div>
+		<div id="sale">
+			<h1>Venta</h1><br/>
+			<form action="GET">
+				<select name="shoe" id="shoe"></select>
+			</form>
+		</div>
 	</div>
 </body>
 </html>

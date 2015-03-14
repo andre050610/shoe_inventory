@@ -1,0 +1,31 @@
+/**************** CSS for the Header of All the Pages ***************************************************/
+
+div#header {
+	width: 70%;
+	margin-top: 30px;
+	margin-left: 15%;
+	margin-right: 15%;
+	position: absolute;
+}
+
+div#logo_name {
+	color: white;
+	display: inline-block;
+	float: left;
+	margin-left: 380px;
+	margin-top: 40px;
+}
+
+a#logout {
+	height: 50px;
+	width: 50px;
+	float: left;
+	margin-top: 50px;
+	margin-left: 300px;
+}
+
+img#logoff {
+	height: 50px;
+	width: 50px;
+	float: left;
+}

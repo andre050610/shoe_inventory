@@ -1,0 +1,19 @@
+/******************* CSS for the Venta Layout *******************************/
+
+div#sale {
+	height: 350px;
+	width: 660px;
+	display: inline-block;
+	margin-top: 15px;
+	margin-left: 220px;
+	z-index: 2;
+	background-color: white;
+}
+
+h1 {
+	text-align: center;
+}
+
+select#shoe {
+	margin-left: 50px;
+}
