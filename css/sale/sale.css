@@ -1,7 +1,7 @@
 /******************* CSS for the Venta Layout *******************************/
 
 div#sale {
-	height: 350px;
+	height: 600px;
 	width: 660px;
 	display: inline-block;
 	margin-top: 15px;
@@ -23,7 +23,7 @@ span {
 
 .sale {
 	width: 120px;
-	background-color: black;
+	background-color: #0F1015;
 	color: white;
 	border-radius: 5px;
 	border: 0px;
@@ -61,4 +61,46 @@ button.btn {
 
 button#submit {
 	margin-left: 220px;
+}
+
+div#verify_sale {
+	color: white;
+	margin-left: 224px;
+	margin-top: 20px;
+}
+
+table {
+	color: white;
+	margin-top: 40px;
+	margin-left: 40px;
+}
+
+td.header {
+	font-weight: 900;
+	font-size: 1.5em;
+	padding-right: 30px;
+	padding-left: 40px;
+}
+
+td {
+	text-align: center;
+}
+
+form#correct {
+	margin-top: 60px;
+}
+
+span#correct {
+	margin-left: 260px;
+}
+
+button#correct {
+	margin-left: 220px;
+}
+
+footer {
+	height: 20px;
+	width: 100%;
+	margin-top: 830px;
+	position: absolute;
 }

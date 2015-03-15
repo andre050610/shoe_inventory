@@ -11,7 +11,7 @@
 	<script type="text/javascript" src="../js/menu/menu.js"></script>
 </head>
 <body>
-	<div id="main_div_2"></div>
+	<div id="main_div_2" style="height: 750px"></div>
 	<div id="header"> 
 		<div id="logo_name"><h1>Katy Shoes</h1></div>
 		<a id="logout" href="logout.php" style="color: white"><img id="logoff" src="../images/logoff_btn.png"></a>	
@@ -33,7 +33,7 @@
 		</ul>
 		<div id="sale">
 			<h1>Venta</h1><br/>
-			<form action="#" method="POST">
+			<form action="#" method="GET">
 				<span>Estilo</span>
 				<select name="shoe" id="shoe" class="sale">
 					<option label=" "></option>
@@ -65,14 +65,58 @@
 					<option value="ten">10</option>
 				</select><br/><br/>
 				<span id="price">Precio</span><span>$</span>
-				<input type="text" id="price" class="sale" maxlength="10"><br/><br/>
+				<input type="text" id="price" name="price" class="sale" maxlength="10"><br/><br/>
 				<button class="btn" id="submit" type="submit">Guardar</button>
 				<button class="btn" type="reset">Reajustar</button>
 			</form>
+			<div id="verify_sale">
 <?php
-	include 'inc/sale.inc.php';
+	include 'sale_form/sale_report.php';
 ?>
+			</div>
+			<div id="order">
+				<table>
+					<tr>
+						<td class="header">Estilo</td>
+						<td class="header">Calzado</td>
+						<td class="header">Cantidad</td>
+						<td class="header">Precio</td>
+					</tr>
+					<tr>
+						<td>
+<?php 
+	if (!empty($shoe) && !empty($size) && !empty($amount) && !empty($price))
+		echo $shoe;
+?>
+						</td>
+						<td>
+<?php 
+	if (!empty($shoe) && !empty($size) && !empty($amount) && !empty($price))
+		echo $size; 
+?>
+						</td>
+						<td>
+<?php 
+	if (!empty($shoe) && !empty($size) && !empty($amount) && !empty($price)) 
+		echo $amount; 
+?>
+						</td>
+						<td>
+<?php 
+	if (!empty($shoe) && !empty($size) && !empty($amount) && !empty($price)) 
+		echo $price; 
+?>
+						</td>
+					</tr>	
+				</table>
+			</div>
+			<form id="correct" action="#">
+			<span id="correct">Esta correcto la orden?</span><br/><br/>
+			<button class="btn" id="correct" type="Submit">Si</button>
+			<button class="btn" type="Submit">No</button>
+		</form>
 		</div>
 	</div>
+	<footer></footer>
 </body>
 </html>
