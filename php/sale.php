@@ -33,7 +33,7 @@
 		</ul>
 		<div id="sale">
 			<h1>Venta</h1><br/>
-			<form action="GET">
+			<form action="#" method="POST">
 				<span>Estilo</span>
 				<select name="shoe" id="shoe" class="sale">
 					<option label=" "></option>
@@ -64,7 +64,14 @@
 					<option value="nine">9</option>
 					<option value="ten">10</option>
 				</select><br/><br/>
+				<span id="price">Precio</span><span>$</span>
+				<input type="text" id="price" class="sale" maxlength="10"><br/><br/>
+				<button class="btn" id="submit" type="submit">Guardar</button>
+				<button class="btn" type="reset">Reajustar</button>
 			</form>
+<?php
+	include 'inc/sale.inc.php';
+?>
 		</div>
 	</div>
 </body>

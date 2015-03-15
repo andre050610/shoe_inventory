@@ -18,10 +18,10 @@ h1 {
 
 span {
 	color: white;
-	margin-left: 100px;
+	margin-left: 180px;
 }
 
-select.sale {
+.sale {
 	width: 120px;
 	background-color: black;
 	color: white;
@@ -40,4 +40,25 @@ select#size {
 
 select#amount {
 	margin-left: 30px;
+}
+
+span#price {
+	margin-right: -142px;
+}
+
+button.btn {
+	height: 28px;
+	width: 100px;
+	color: white;
+	background-image: url("../../images/login_btn.png");
+	background-size: 100px;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	border: 0px;
+	cursor: pointer;
+	margin-left: 25px;
+}
+
+button#submit {
+	margin-left: 220px;
 }
