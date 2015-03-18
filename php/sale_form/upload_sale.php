@@ -1,7 +1,3 @@
-<?php
-	
-	//require '../../php/inc/connect_mysqli.inc.php';
-?>
 
 <!DOCTYPE html>
 <html>
