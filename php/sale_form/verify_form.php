@@ -9,5 +9,4 @@
 	$_SESSION['size'] = $size;
 	$_SESSION['amount'] = $amount;
 	$_SESSION['price'] = $price;
-	echo $shoe.$size.$amount.$price;
 ?>

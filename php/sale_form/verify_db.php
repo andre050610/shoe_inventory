@@ -9,7 +9,7 @@
 	$price = $_SESSION['price'];
 
 	if (!empty($shoe) && !empty($size) && !empty($amount) && !empty($price)){
-		if (!$query = "SELECT * FROM inventory WHERE style = '$shoe' AND size = '$size'"){
+		if (!$query = "SELECT * FROM inventory WHERE style = '$shoe' AND size = '$size' AND sold IS NULL"){
 			echo 'Error en el Query';
 		}
 
@@ -23,21 +23,41 @@
 						</h1>';
 				}
 
-				else if ($query_num_rows == 1){
-					// Delete from inventory and add to a new 
-					// sale table
-				}
-
-				else if ($query_num_rows > 1){
+				else if ($query_num_rows >= 1){
 					if ($query_num_rows >= $amount){
-						// Delete from inventory and add to a new 
-						// sale table in a while loop
-					}
+						if (!$query = "UPDATE inventory SET sold = 'SOLD', sale = '$price' WHERE style = '$shoe' AND size = '$size' AND sold IS NULL LIMIT $amount"){
+							echo 'Error en el Query';
+						}
 
+						else {
+						 	if ($query_run = mysqli_query($conn, $query)){
+						 		echo '<h1>
+										Venta Esta Procesando...		
+									</h1>';
+						 	}
+
+						 	else {
+						 		echo "Not Working";
+						 	}
+						}
+					}
+					
 					else {
 						echo '<h1>
-								No Tienes '.$amount.' Estilos En Tu Inventario...		
+								No Tienes '.$amount.' Pares En Tu Inventario!
 							</h1>';
+
+						if ($query_num_rows == 1){
+							echo '<h1>
+									Solo Tienes '.$query_num_rows.' Par...
+								</h1>';
+						}
+
+						else {
+							echo '<h1>
+									Solo Tienes '.$query_num_rows.' Pares...
+								</h1>';
+						}
 					}
 				}
 			}

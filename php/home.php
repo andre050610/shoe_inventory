@@ -21,7 +21,7 @@
 			<a class="menu" href="sale.php">
 				<li>Venta</li>
 			</a>
-			<a class="menu" href="#">
+			<a class="menu" href="new_product.php">
 				<li>Nuevo Producto</li>
 			</a>
 			<a class="menu" href="#">

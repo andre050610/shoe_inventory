@@ -7,7 +7,10 @@
 
 		if (empty($shoe) || empty($size) || empty($amount) || empty($price)){
 			echo 'Porfavor ingrese todo los campos!';
+		}
 
+		else if (!is_numeric($price)){
+			echo 'Porfavor ingrese numerico en el campo de \'Precio\'';
 		}
 	}
 	

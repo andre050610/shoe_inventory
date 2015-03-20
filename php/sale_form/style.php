@@ -7,7 +7,7 @@
 
 			if ($query_num_rows > 0){
 				while($row = mysqli_fetch_assoc($query_run)){
-					echo '<option value="Nike">'.$row['style'].'</option>';
+					echo '<option value="'.$row['style'].'">'.$row['style'].'</option>';
 				}
 				
 			}

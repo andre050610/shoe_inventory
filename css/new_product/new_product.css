@@ -1,0 +1,90 @@
+/***************** CSS for the Nuevo Producto *************************************/
+
+div#new {
+	height: 600px;
+	width: 660px;
+	display: inline-block;
+	margin-top: 15px;
+	margin-left: 220px;
+	z-index: 2;
+	background-color: #042037;
+	opacity: .9;
+}
+
+h1 {
+	text-align: center;
+	color: white;
+}
+
+span {
+	color: white;
+	margin-left: 180px;
+}
+
+.new {
+	width: 120px;
+	background-color: #0F1015;
+	color: white;
+	border-radius: 5px;
+	border: 0px;
+	outline: 0;
+}
+
+input#shoe {
+	margin-left: 50px;
+}
+
+select#size {
+	margin-left: 35px;
+}
+
+span#retail {
+	margin-right: -162px;
+}
+
+button.btn {
+	height: 28px;
+	width: 100px;
+	color: white;
+	background-image: url("../../images/login_btn.png");
+	background-size: 100px;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	border: 0px;
+	cursor: pointer;
+	margin-left: 25px;
+}
+
+button#submit {
+	margin-left: 220px;
+}
+
+div#verify_sale {
+	color: white;
+	margin-left: 224px;
+	margin-top: 20px;
+}
+
+table {
+	color: white;
+	margin-top: 40px;
+	margin-left: 100px;
+}
+
+td.header {
+	font-weight: 900;
+	font-size: 1.5em;
+	padding-right: 30px;
+	padding-left: 40px;
+}
+
+td {
+	text-align: center;
+}
+
+footer {
+	height: 20px;
+	width: 100%;
+	margin-top: 830px;
+	position: absolute;
+}

@@ -1,3 +1,4 @@
+/*************** Takes to the Home Page After Clicking the No BTN **************************************/
 
 $(document).ready(function(){
 

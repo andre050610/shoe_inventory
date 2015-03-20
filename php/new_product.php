@@ -5,11 +5,10 @@
 	<link rel="stylesheet" type="text/css" href="../css/main/main.css">
 	<link rel="stylesheet" type="text/css" href="../css/main/header.css">
 	<link rel="stylesheet" type="text/css" href="../css/main/menu.css">
-	<link rel="stylesheet" type="text/css" href="../css/sale/sale.css">
+	<link rel="stylesheet" type="text/css" href="../css/new_product/new_product.css">
 	<script type="text/javascript" src="../js/jquery/jquery2.js"></script>
 	<script type="text/javascript" src="../js/jquery/jquery-ui.js"></script>
 	<script type="text/javascript" src="../js/menu/menu.js"></script>
-	<script type="text/javascript" src="../js/sale/sale.js"></script>
 </head>
 <body>
 	<div id="main_div_2" style="height: 750px"></div>
@@ -32,19 +31,13 @@
 				<li>Notas</li>
 			</a>
 		</ul>
-		<div id="sale">
-			<h1>Venta</h1><br/>
+		<div id="new">	
+			<h1>Nuevo Producto</h1><br/>
 			<form action="#" method="GET">
 				<span>Estilo</span>
-				<select name="shoe" id="shoe" class="sale">
-					<option label=" "></option>
-<?php
-	include 'sale_form/style.php';
-	$correct = false;
-?>
-				</select><br/><br/>
+				<input type="text" id="shoe" name="shoe" class="new"><br/><br/>
 				<span>Calzado</span>
-				<select name="size" id="size" class="sale">
+				<select name="size" id="size" class="new">
 					<option label=""></option>
 					<option value="3-6">3-6</option>
 					<option value="6-9">6-9</option>
@@ -52,28 +45,15 @@
 					<option value="15-17">15-17</option>
 					<option value="18-21">18-21</option>
 				</select><br/><br/>
-				<span>Cantidad</span>
-				<select name="amount" id="amount" class="sale">
-					<option label=""></option>
-					<option value="1">1</option>
-					<option value="2">2</option>
-					<option value="3">3</option>
-					<option value="4">4</option>
-					<option value="5">5</option>
-					<option value="6">6</option>
-					<option value="7">7</option>
-					<option value="8">8</option>
-					<option value="9">9</option>
-					<option value="10">10</option>
-				</select><br/><br/>
-				<span id="price">Precio</span><span>$</span>
-				<input type="text" id="price" name="price" class="sale" maxlength="10"><br/><br/><br/>
+				<span id="retail">Inversion</span><span>$</span>
+				<input type="text" id="retail" name="retail" class="new"><br/><br/><br/>
 				<button class="btn" id="submit" type="submit">Guardar</button>
 				<button class="btn" type="reset">Reajustar</button>
 			</form>
 			<div id="verify_sale">
 <?php
-	include 'sale_form/sale_report.php';
+	include 'new_product_form/new_product_report.php';
+	$correct = false;
 ?>
 			</div>
 			<div id="order">
@@ -81,13 +61,12 @@
 					<tr>
 						<td class="header">Estilo</td>
 						<td class="header">Calzado</td>
-						<td class="header">Cantidad</td>
-						<td class="header">Precio</td>
+						<td class="header">Inversion</td>
 					</tr>
 					<tr>
 						<td>
 <?php 
-	if (!empty($shoe) && !empty($size) && !empty($amount) && !empty($price)){
+	if (!empty($shoe) && !empty($size) && !empty($retail)){
 		echo $shoe;
 	}
 
@@ -98,7 +77,7 @@
 						</td>
 						<td>
 <?php 
-	if (!empty($shoe) && !empty($size) && !empty($amount) && !empty($price))
+	if (!empty($shoe) && !empty($size) && !empty($retail))
 		echo $size; 
 	else {
 		echo '-------';
@@ -107,18 +86,9 @@
 						</td>
 						<td>
 <?php 
-	if (!empty($shoe) && !empty($size) && !empty($amount) && !empty($price)) 
-		echo $amount; 
-	else {
-		echo '-------';
-	}
-?>
-						</td>
-						<td>
-<?php 
-	if (!empty($shoe) && !empty($size) && !empty($amount) && !empty($price)){
-		if (is_numeric($price)){
-			echo '$'.$price;
+	if (!empty($shoe) && !empty($size) && !empty($retail)){
+		if (is_numeric($retail)){
+			echo '$'.$retail;
 			$correct = true;
 		}
 
@@ -134,11 +104,6 @@
 					</tr>	
 				</table>
 			</div>
-<?php
-	if ($correct){
-		include 'sale_form/verify_form.php';
-	}
-?>
 		</div>
 	</div>
 	<footer></footer>
