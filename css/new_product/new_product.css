@@ -82,6 +82,18 @@ td {
 	text-align: center;
 }
 
+form#correct_form {
+	margin-top: 60px;
+}
+
+span#correct {
+	margin-left: 260px;
+}
+
+button#correct {
+	margin-left: 220px;
+}
+
 footer {
 	height: 20px;
 	width: 100%;

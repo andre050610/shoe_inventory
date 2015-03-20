@@ -104,6 +104,11 @@
 					</tr>	
 				</table>
 			</div>
+<?php
+	if ($correct){
+		include 'new_product_form/verify_form.php';
+	}
+?>
 		</div>
 	</div>
 	<footer></footer>
