@@ -4,8 +4,9 @@
 		$size = $_GET['size'];
 		$amount = $_GET['amount'];
 		$price = $_GET['price'];
+		$date = $_GET['date'];
 
-		if (empty($shoe) || empty($size) || empty($amount) || empty($price)){
+		if (empty($shoe) || empty($size) || empty($amount) || empty($price) || empty($date)){
 			echo 'Porfavor ingrese todo los campos!';
 		}
 

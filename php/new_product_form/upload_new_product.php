@@ -13,7 +13,7 @@
 	<div id="process">
 <?php
 	include '../../php/new_product_form/verify_db.php';
-	echo '<script type="text/javascript" src="../../js/sale/process.js"></script>';
+	echo '<script type="text/javascript" src="../../js/new_product/process.js"></script>';
 ?>
 	</div>
 </body>

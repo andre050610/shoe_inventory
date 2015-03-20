@@ -7,6 +7,7 @@
 	$size = $_SESSION['size'];
 	$amount = $_SESSION['amount'];
 	$price = $_SESSION['price'];
+	$date = $_SESSION['date'];
 
 	if (!empty($shoe) && !empty($size) && !empty($amount) && !empty($price)){
 		if (!$query = "SELECT * FROM inventory WHERE style = '$shoe' AND size = '$size' AND sold IS NULL"){
@@ -25,7 +26,7 @@
 
 				else if ($query_num_rows >= 1){
 					if ($query_num_rows >= $amount){
-						if (!$query = "UPDATE inventory SET sold = 'SOLD', sale = '$price' WHERE style = '$shoe' AND size = '$size' AND sold IS NULL LIMIT $amount"){
+						if (!$query = "UPDATE inventory SET sold = 'SOLD', sale = '$price', date_sold = '$date' WHERE style = '$shoe' AND size = '$size' AND sold IS NULL LIMIT $amount"){
 							echo 'Error en el Query';
 						}
 
@@ -37,6 +38,7 @@
 						 	}
 
 						 	else {
+						 		echo mysqli_error($conn);
 						 		echo "Not Working";
 						 	}
 						}

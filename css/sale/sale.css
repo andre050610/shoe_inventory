@@ -22,7 +22,7 @@ span {
 }
 
 .sale {
-	width: 120px;
+	width: 140px;
 	background-color: #0F1015;
 	color: white;
 	border-radius: 5px;
@@ -44,6 +44,10 @@ select#amount {
 
 span#price {
 	margin-right: -142px;
+}
+
+input#date {
+	margin-left: 48px;
 }
 
 button.btn {
@@ -72,12 +76,12 @@ div#verify_sale {
 table {
 	color: white;
 	margin-top: 40px;
-	margin-left: 40px;
+	margin-left: -10px;
 }
 
 td.header {
 	font-weight: 900;
-	font-size: 1.5em;
+	font-size: 1.3em;
 	padding-right: 30px;
 	padding-left: 40px;
 }

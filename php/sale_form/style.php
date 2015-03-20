@@ -6,7 +6,7 @@
 			$query_num_rows = mysqli_num_rows($query_run);
 
 			if ($query_num_rows > 0){
-				while($row = mysqli_fetch_assoc($query_run)){
+				while ($row = mysqli_fetch_assoc($query_run)){
 					echo '<option value="'.$row['style'].'">'.$row['style'].'</option>';
 				}
 				
@@ -22,6 +22,4 @@
 		echo "Query No Sirve";
 	}
 
-	echo '---------------yesssss!';
-	
 ?>

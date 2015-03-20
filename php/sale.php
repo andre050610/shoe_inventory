@@ -67,7 +67,9 @@
 					<option value="10">10</option>
 				</select><br/><br/>
 				<span id="price">Precio</span><span>$</span>
-				<input type="text" id="price" name="price" class="sale" maxlength="10"><br/><br/><br/>
+				<input type="text" id="price" name="price" class="sale" maxlength="10"><br/><br/>
+				<span>Fecha</span>
+				<input type="date" id="date" name="date" class="sale"><br/><br/><br/>
 				<button class="btn" id="submit" type="submit">Guardar</button>
 				<button class="btn" type="reset">Reajustar</button>
 			</form>
@@ -83,14 +85,13 @@
 						<td class="header">Calzado</td>
 						<td class="header">Cantidad</td>
 						<td class="header">Precio</td>
+						<td class="header">Fecha</td>
 					</tr>
 					<tr>
 						<td>
 <?php 
-	if (!empty($shoe) && !empty($size) && !empty($amount) && !empty($price)){
+	if (!empty($shoe) && !empty($size) && !empty($amount) && !empty($price) && !empty($date))
 		echo $shoe;
-	}
-
 	else {
 		echo '-------';
 	}
@@ -98,7 +99,7 @@
 						</td>
 						<td>
 <?php 
-	if (!empty($shoe) && !empty($size) && !empty($amount) && !empty($price))
+	if (!empty($shoe) && !empty($size) && !empty($amount) && !empty($price) && !empty($date))
 		echo $size; 
 	else {
 		echo '-------';
@@ -107,7 +108,7 @@
 						</td>
 						<td>
 <?php 
-	if (!empty($shoe) && !empty($size) && !empty($amount) && !empty($price)) 
+	if (!empty($shoe) && !empty($size) && !empty($amount) && !empty($price) && !empty($date)) 
 		echo $amount; 
 	else {
 		echo '-------';
@@ -116,7 +117,7 @@
 						</td>
 						<td>
 <?php 
-	if (!empty($shoe) && !empty($size) && !empty($amount) && !empty($price)){
+	if (!empty($shoe) && !empty($size) && !empty($amount) && !empty($price) && !empty($date)){
 		if (is_numeric($price)){
 			echo '$'.$price;
 			$correct = true;
@@ -126,6 +127,15 @@
 			echo 'N/A';
 		} 
 	}
+	else {
+		echo '-------';
+	}
+?>
+						</td>
+						<td>
+<?php
+	if (!empty($shoe) && !empty($size) && !empty($amount) && !empty($price) && !empty($date))
+		echo $date[8].$date[9].'-'.$date[5].$date[6].'-'.$date[0].$date[1].$date[2].$date[3]; 
 	else {
 		echo '-------';
 	}

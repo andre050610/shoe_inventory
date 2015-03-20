@@ -5,8 +5,10 @@
 </form>
 <?php
 	session_start();
+
 	$_SESSION['shoe'] = $shoe;
 	$_SESSION['size'] = $size;
 	$_SESSION['amount'] = $amount;
 	$_SESSION['price'] = $price;
+	$_SESSION['date'] = $date;
 ?>

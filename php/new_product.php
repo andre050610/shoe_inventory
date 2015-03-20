@@ -9,6 +9,7 @@
 	<script type="text/javascript" src="../js/jquery/jquery2.js"></script>
 	<script type="text/javascript" src="../js/jquery/jquery-ui.js"></script>
 	<script type="text/javascript" src="../js/menu/menu.js"></script>
+	<script type="text/javascript" src="../js/new_product/new.js"></script>
 </head>
 <body>
 	<div id="main_div_2" style="height: 750px"></div>
@@ -66,29 +67,20 @@
 					<tr>
 						<td>
 <?php 
-	if (!empty($shoe) && !empty($size) && !empty($retail)){
-		echo $shoe;
-	}
-
-	else {
+	if (empty($shoe) || empty($size) || empty($retail))
 		echo '-------';
-	}
 ?>
 						</td>
 						<td>
 <?php 
-	if (!empty($shoe) && !empty($size) && !empty($retail))
-		echo $size; 
-	else {
+	if (empty($shoe) || empty($size) || empty($retail))
 		echo '-------';
-	}
 ?>
 						</td>
 						<td>
 <?php 
 	if (!empty($shoe) && !empty($size) && !empty($retail)){
 		if (is_numeric($retail)){
-			echo '$'.$retail;
 			$correct = true;
 		}
 
@@ -102,6 +94,9 @@
 ?>
 						</td>
 					</tr>	
+<?php
+	include 'new_product_form/temp_inventory.php';
+?>
 				</table>
 			</div>
 <?php
