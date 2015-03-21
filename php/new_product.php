@@ -12,7 +12,7 @@
 	<script type="text/javascript" src="../js/new_product/new.js"></script>
 </head>
 <body>
-	<div id="main_div_2" style="height: 750px"></div>
+	<div id="main_div_2" style="height: 950px"></div>
 	<div id="header"> 
 		<div id="logo_name"><h1>Katy Shoes</h1></div>
 		<a id="logout" href="logout.php" style="color: white"><img id="logoff" src="../images/logoff_btn.png"></a>	

@@ -5,6 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="../css/main/main.css">
 	<link rel="stylesheet" type="text/css" href="../css/main/header.css">
 	<link rel="stylesheet" type="text/css" href="../css/main/menu.css">
+	<link rel="stylesheet" type="text/css" href="../css/main/inventory.css">
 	<link rel="stylesheet" type="text/css" href="../css/home/home.css">
 	<script type="text/javascript" src="../js/jquery/jquery2.js"></script>
 	<script type="text/javascript" src="../js/jquery/jquery-ui.js"></script>
@@ -32,6 +33,22 @@
 			</a>
 		</ul>
 		<div id="home_img"></div>
+	</div>
+	<div id="inventory_display">
+		<img src="" alt="">
+		<table>
+			<tr id="title">
+				<th id="title">Inventario</th>
+			</tr>
+			<tr>
+				<th class="header">Estilo</th>
+				<th class="header">Calzado</th>
+				<th class="header">Inversion</th>
+			</tr>
+<?php 
+	require 'inc/inventory.inc.php';
+?>
+		</table>
 	</div>
 </body>
 </html>

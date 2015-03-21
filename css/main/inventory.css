@@ -1,0 +1,54 @@
+/************ CSS for the Inventory Table Display ********************************************/
+
+div#inventory_display {
+	height: 20px;
+	width: 600px;
+	background-color: #141A1A;
+	margin-left: 450px;
+	margin-top: 140px;
+	margin-bottom: 30px;
+	position: absolute;
+	opacity: 0.9;
+	z-index: 4;
+}
+
+img {
+	height: 18px;
+	width: 30px;
+}
+
+h4 {
+	padding: 0;
+}
+
+table {
+	width: 238px;
+	color: white;
+	border: 1px solid white;
+	visibility: hidden;
+}
+
+tr#title {
+	border-bottom: 1px solid white;
+}
+
+th#title {
+	padding-left: 36%;
+	padding-right: 30%;
+	padding-bottom: 10px;
+	font-size: 1.9em;
+}
+
+th.header {
+	font-size: 1.6em;
+	padding-right: 30px;
+	padding-left: 20px;
+}
+
+td {
+	text-align: center;
+	border: 1px solid white;
+	padding-right: 30px;
+	padding-left: 25px;
+}
+
