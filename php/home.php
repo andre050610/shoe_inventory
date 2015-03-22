@@ -10,6 +10,7 @@
 	<script type="text/javascript" src="../js/jquery/jquery2.js"></script>
 	<script type="text/javascript" src="../js/jquery/jquery-ui.js"></script>
 	<script type="text/javascript" src="../js/menu/menu.js"></script>
+	<script type="text/javascript" src="../js/inventory/inventory.js"></script>
 </head>
 <body>
 	<div id="main_div_2"></div>
@@ -35,8 +36,8 @@
 		<div id="home_img"></div>
 	</div>
 	<div id="inventory_display">
-		<img src="" alt="">
-		<table>
+		<div id="btn_inventory">Inventario</div>
+		<table id="inventory_tble">
 			<tr id="title">
 				<th id="title">Inventario</th>
 			</tr>

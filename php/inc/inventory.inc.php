@@ -12,9 +12,9 @@
 			if ($query_num_rows > 0){
 				while ($row = mysqli_fetch_assoc($query_run)){
 					echo '<tr>
-							<td>'.$row['style'].'</td>
-							<td>'.$row['size'].'</td>
-							<td>$'.$row['retail'].'</td>
+							<td class="inventory">'.$row['style'].'</td>
+							<td class="inventory">'.$row['size'].'</td>
+							<td class="inventory">$'.$row['retail'].'</td>
 						</tr>';
 				}
 			}

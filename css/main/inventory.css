@@ -1,7 +1,6 @@
 /************ CSS for the Inventory Table Display ********************************************/
 
 div#inventory_display {
-	height: 20px;
 	width: 600px;
 	background-color: #141A1A;
 	margin-left: 450px;
@@ -12,20 +11,30 @@ div#inventory_display {
 	z-index: 4;
 }
 
-img {
+div#btn_inventory {
 	height: 18px;
-	width: 30px;
+	width: 80px;
+	text-align: center;
+	background-color: #593535;
+	border: 2px solid white;
+	border-radius: 20px;
+	color: white;
+	margin-left: 40%;
+}
+
+div#btn_inventory:hover {
+	background-color: #814C4C;
+	cursor: pointer;
 }
 
 h4 {
 	padding: 0;
 }
 
-table {
+table#inventory_tble {
 	width: 238px;
 	color: white;
 	border: 1px solid white;
-	visibility: hidden;
 }
 
 tr#title {
@@ -45,7 +54,7 @@ th.header {
 	padding-left: 20px;
 }
 
-td {
+td.inventory {
 	text-align: center;
 	border: 1px solid white;
 	padding-right: 30px;

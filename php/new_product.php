@@ -6,10 +6,12 @@
 	<link rel="stylesheet" type="text/css" href="../css/main/header.css">
 	<link rel="stylesheet" type="text/css" href="../css/main/menu.css">
 	<link rel="stylesheet" type="text/css" href="../css/new_product/new_product.css">
+	<link rel="stylesheet" type="text/css" href="../css/main/inventory.css">
 	<script type="text/javascript" src="../js/jquery/jquery2.js"></script>
 	<script type="text/javascript" src="../js/jquery/jquery-ui.js"></script>
 	<script type="text/javascript" src="../js/menu/menu.js"></script>
 	<script type="text/javascript" src="../js/new_product/new.js"></script>
+	<script type="text/javascript" src="../js/inventory/inventory.js"></script>
 </head>
 <body>
 	<div id="main_div_2" style="height: 950px"></div>
@@ -58,7 +60,7 @@
 ?>
 			</div>
 			<div id="order">
-				<table>
+				<table id="new">
 					<tr>
 						<td class="header">Estilo</td>
 						<td class="header">Calzado</td>
@@ -105,6 +107,22 @@
 	}
 ?>
 		</div>
+	</div>
+	<div id="inventory_display">
+		<div id="btn_inventory">Inventario</div>
+		<table id="inventory_tble">
+			<tr id="title">
+				<th id="title">Inventario</th>
+			</tr>
+			<tr>
+				<th class="header">Estilo</th>
+				<th class="header">Calzado</th>
+				<th class="header">Inversion</th>
+			</tr>
+<?php 
+	require 'inc/inventory.inc.php';
+?>
+		</table>
 	</div>
 	<footer></footer>
 </body>
