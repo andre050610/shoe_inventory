@@ -1,13 +1,13 @@
-/***************** CSS for the Nuevo Producto *************************************/
+/******************* CSS for the Ganansias Layout *******************************/
 
-div#new {
-	height: 800px;
+div#earning {
+	height: 600px;
 	width: 660px;
 	display: inline-block;
 	margin-top: 15px;
 	margin-left: 220px;
 	z-index: 2;
-	background-color: #042037;
+	background-color: #5C540E;
 	opacity: .9;
 }
 
@@ -21,7 +21,7 @@ span {
 	margin-left: 180px;
 }
 
-.new {
+.earn {
 	width: 140px;
 	background-color: #0F1015;
 	color: white;
@@ -30,16 +30,12 @@ span {
 	outline: 0;
 }
 
-input#shoe {
-	margin-left: 50px;
+input#date_begin {
+	margin-left: 48px;
 }
 
-select#size {
-	margin-left: 35px;
-}
-
-span#retail {
-	margin-right: -162px;
+input#date_end {
+	margin-left: 30px;
 }
 
 button.btn {
@@ -59,44 +55,32 @@ button#submit {
 	margin-left: 220px;
 }
 
-div#verify_new {
+div#verify_earning {
 	color: white;
 	margin-left: 224px;
 	margin-top: 20px;
 }
 
-table#new {
+table#earning {
 	color: white;
 	margin-top: 40px;
-	margin-left: 100px;
+	margin-left: 10px;
 }
 
 td.header {
 	font-weight: 900;
-	font-size: 1.5em;
-	padding-right: 30px;
-	padding-left: 40px;
+	font-size: 1.3em;
+	padding-right: 20px;
+	padding-left: 30px;
 }
 
 td {
 	text-align: center;
 }
 
-form#correct_form {
-	margin-top: 60px;
-}
-
-span#correct {
-	margin-left: 260px;
-}
-
-button#correct {
-	margin-left: 220px;
-}
-
 footer {
 	height: 20px;
 	width: 100%;
-	margin-top: 1030px;
+	margin-top: 830px;
 	position: absolute;
 }

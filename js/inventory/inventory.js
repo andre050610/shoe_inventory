@@ -1,15 +1,19 @@
 /****************** Opens the Inventory Div ******************************************/
 
 $(document).ready(function(){
+	click = false;
 	$('#inventory_tble').hide();
 
 	$('#btn_inventory').click(function(){
-		$('#inventory_tble').show('slow');
-	});
+		if (!click){
+			$('#inventory_tble').show('slow');
+			click = true;
+		}
 
-	$('#inventory_tble').hover(function(){
+		else {
+			$('#inventory_tble').hide('slow');
+			click = false;
+		}
 
-	}, function(){
-		$('#inventory_tble').hide('slow');
 	});
 });

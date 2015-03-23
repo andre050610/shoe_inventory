@@ -5,7 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="../css/main/main.css">
 	<link rel="stylesheet" type="text/css" href="../css/main/header.css">
 	<link rel="stylesheet" type="text/css" href="../css/main/menu.css">
-	<link rel="stylesheet" type="text/css" href="../css/new_product/new_product.css">
+	<link rel="stylesheet" type="text/css" href="../css/earning/earning.css">
 	<link rel="stylesheet" type="text/css" href="../css/main/inventory.css">
 	<script type="text/javascript" src="../js/jquery/jquery2.js"></script>
 	<script type="text/javascript" src="../js/jquery/jquery-ui.js"></script>
@@ -34,79 +34,64 @@
 				<li>Notas</li>
 			</a>
 		</ul>
-		<div id="new">	
-			<h1>Nuevo Producto</h1><br/>
+		<div id="earning">
+			<h1>Venta</h1><br/>
 			<form action="#" method="GET">
-				<span>Estilo</span>
-				<input type="text" id="shoe" name="shoe" class="new"><br/><br/>
-				<span>Calzado</span>
-				<select name="size" id="size" class="new">
-					<option label=""></option>
-					<option value="3-6">3-6</option>
-					<option value="6-9">6-9</option>
-					<option value="12-14">12-14</option>
-					<option value="15-17">15-17</option>
-					<option value="18-21">18-21</option>
-				</select><br/><br/>
-				<span id="retail">Inversion</span><span>$</span>
-				<input type="text" id="retail" name="retail" class="new"><br/><br/><br/>
+				<span>Fecha Inicio</span>
+				<input type="date" id="date_begin" name="date_begin" class="earn"><br/><br/>
+				<span>Fecha Termino</span>
+				<input type="date" id="date_end" name="date_end" class="earn"><br/><br/><br/>
 				<button class="btn" id="submit" type="submit">Guardar</button>
 				<button class="btn" type="reset">Reajustar</button>
 			</form>
-			<div id="verify_new">
+			<div id="verify_earning">
 <?php
-	include 'new_product_form/new_product_report.php';
-	$correct = false;
+	include 'earning/earning_report.php';
 ?>
 			</div>
 			<div id="order">
-				<table id="new">
+				<table id="earning">
 					<tr>
 						<td class="header">Estilo</td>
 						<td class="header">Calzado</td>
+						<td class="header">Precio</td>
 						<td class="header">Inversion</td>
+						<td class="header">Ganansia</td>
 					</tr>
 					<tr>
 						<td>
 <?php 
-	if (empty($shoe) || empty($size) || empty($retail))
+	if (empty($date_begin) || empty($date_end))
 		echo '-------';
 ?>
 						</td>
 						<td>
 <?php 
-	if (empty($shoe) || empty($size) || empty($retail))
+	if (empty($date_begin) || empty($date_end))
 		echo '-------';
 ?>
 						</td>
 						<td>
 <?php 
-	if (!empty($shoe) && !empty($size) && !empty($retail)){
-		if (is_numeric($retail)){
-			$correct = true;
-		}
-
-		else {
-			echo 'N/A';
-		} 
-	}
-	else {
+	if (empty($date_begin) || empty($date_end))
 		echo '-------';
-	}
+?>
+						</td>
+						<td>
+<?php 
+	if (empty($date_begin) || empty($date_end))
+		echo '-------';
+?>
+						</td>
+						<td>
+<?php 
+	if (empty($date_begin) || empty($date_end))
+		echo '-------';
 ?>
 						</td>
 					</tr>	
-<?php
-	include 'new_product_form/temp_inventory.php';
-?>
 				</table>
-			</div>
-<?php
-	if ($correct){
-		include 'new_product_form/verify_form.php';
-	}
-?>
-		</div>
+		</div>		
 	</div>
 	<div id="inventory_display">
 		<div id="btn_inventory">Inventario</div>
