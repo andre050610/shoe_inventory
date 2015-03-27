@@ -1,7 +1,7 @@
 <?php
 	require 'inc/connect_mysqli.inc.php';
 
-	if (!$query = "SELECT * FROM inventory ORDER BY style ASC"){
+	if (!$query = "SELECT * FROM inventory WHERE sold IS NULL ORDER BY style ASC"){
 		echo 'Error en el Query';
 	}
 

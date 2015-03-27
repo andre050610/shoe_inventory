@@ -6,6 +6,10 @@
 		if (empty($date_begin) || empty($date_end)){
 			echo 'Porfavor ingrese todo los campos!';
 		}
+
+		else {
+			$proceed = true;
+		}
 	}
 	
 ?>

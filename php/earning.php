@@ -46,51 +46,18 @@
 			</form>
 			<div id="verify_earning">
 <?php
+	$proceed = false;
 	include 'earning/earning_report.php';
 ?>
 			</div>
 			<div id="order">
 				<table id="earning">
-					<tr>
-						<td class="header">Estilo</td>
-						<td class="header">Calzado</td>
-						<td class="header">Precio</td>
-						<td class="header">Inversion</td>
-						<td class="header">Ganansia</td>
-					</tr>
-					<tr>
-						<td>
-<?php 
-	if (empty($date_begin) || empty($date_end))
-		echo '-------';
+<?php
+	include 'earning/earning_table.php';
 ?>
-						</td>
-						<td>
-<?php 
-	if (empty($date_begin) || empty($date_end))
-		echo '-------';
-?>
-						</td>
-						<td>
-<?php 
-	if (empty($date_begin) || empty($date_end))
-		echo '-------';
-?>
-						</td>
-						<td>
-<?php 
-	if (empty($date_begin) || empty($date_end))
-		echo '-------';
-?>
-						</td>
-						<td>
-<?php 
-	if (empty($date_begin) || empty($date_end))
-		echo '-------';
-?>
-						</td>
-					</tr>	
 				</table>
+			</div>
+			<div id="bottom"></br></br></div>
 		</div>		
 	</div>
 	<div id="inventory_display">
