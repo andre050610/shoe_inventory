@@ -32,7 +32,7 @@ h4 {
 }
 
 table#inventory_tble {
-	width: 238px;
+	width: 350px;
 	color: white;
 	border: 1px solid white;
 }
@@ -42,8 +42,6 @@ tr#title {
 }
 
 th#title {
-	padding-left: 36%;
-	padding-right: 30%;
 	padding-bottom: 10px;
 	font-size: 1.9em;
 }
@@ -61,3 +59,23 @@ td.inventory {
 	padding-left: 25px;
 }
 
+th#style {
+	padding-left: 50px;
+}
+
+th#size {
+	padding-left: 40px
+}
+
+button.btn {
+	height: 28px;
+	width: 100px;
+	color: white;
+	background-image: url("../../images/login_btn.png");
+	background-size: 100px;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	border: 0px;
+	cursor: pointer;
+	margin-left: 10px;
+}

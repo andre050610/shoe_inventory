@@ -1,3 +1,6 @@
+<?php
+	session_start();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -110,19 +113,26 @@
 	</div>
 	<div id="inventory_display">
 		<div id="btn_inventory">Inventario</div>
-		<table id="inventory_tble">
-			<tr id="title">
-				<th id="title">Inventario</th>
-			</tr>
-			<tr>
-				<th class="header">Estilo</th>
-				<th class="header">Calzado</th>
-				<th class="header">Inversion</th>
-			</tr>
+		<form action="inc/delete.inc.php" method="GET">
+			<table id="inventory_tble">
+				<tr id="title">
+					<th></th>
+					<th id="title" colspan="2">Inventario</th>
+					<th></th>
+				<tr>
+					<th class="header">Borrar</th>
+					<th class="header" id="style">Estilo</th>
+					<th class="header" id="size">Calzado</th>
+					<th class="header">Inversion</th>
+				</tr>
 <?php 
 	require 'inc/inventory.inc.php';
 ?>
-		</table>
+				<tr>
+					<td id="delete"><button class="btn" id="delete" type="submit">Borrar</button></td>
+				</tr>
+			</table>
+		</form>
 	</div>
 	<footer></footer>
 </body>

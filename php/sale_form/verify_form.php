@@ -4,7 +4,6 @@
 	<button class="btn" id="no_correct" type="button">No</button>
 </form>
 <?php
-	session_start();
 
 	$_SESSION['shoe'] = $shoe;
 	$_SESSION['size'] = $size;
