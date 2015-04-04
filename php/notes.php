@@ -1,6 +1,3 @@
-<?php
-	session_start();
-?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,16 +5,15 @@
 	<link rel="stylesheet" type="text/css" href="../css/main/main.css">
 	<link rel="stylesheet" type="text/css" href="../css/main/header.css">
 	<link rel="stylesheet" type="text/css" href="../css/main/menu.css">
-	<link rel="stylesheet" type="text/css" href="../css/earning/earning.css">
 	<link rel="stylesheet" type="text/css" href="../css/main/inventory.css">
+	<link rel="stylesheet" type="text/css" href="../css/notes/notes.css">
 	<script type="text/javascript" src="../js/jquery/jquery2.js"></script>
 	<script type="text/javascript" src="../js/jquery/jquery-ui.js"></script>
 	<script type="text/javascript" src="../js/menu/menu.js"></script>
-	<script type="text/javascript" src="../js/new_product/new.js"></script>
 	<script type="text/javascript" src="../js/inventory/inventory.js"></script>
 </head>
 <body>
-	<div id="main_div_2" style="height: 950px"></div>
+	<div id="main_div_2"></div>
 	<div id="header"> 
 		<div id="logo_name"><h1>Katy Shoes</h1></div>
 		<a id="logout" href="logout.php" style="color: white"><img id="logoff" src="../images/logoff_btn.png"></a>	
@@ -37,31 +33,14 @@
 				<li>Notas</li>
 			</a>
 		</ul>
-		<div id="earning">
-			<h1>Venta</h1><br/>
-			<form action="#" method="GET">
-				<span>Fecha Inicio</span>
-				<input type="date" id="date_begin" name="date_begin" class="earn"><br/><br/>
-				<span>Fecha Termino</span>
-				<input type="date" id="date_end" name="date_end" class="earn"><br/><br/><br/>
-				<button class="btn" id="submit" type="submit">Guardar</button>
-				<button class="btn" type="reset">Reajustar</button>
+		<div id="notes">
+			<h1>Notas</h1><br/>
+			<form action="#" method="GET" enctype="multipart/form-data">
+			<span>Subir Nota</span>
+			<input type="file" name="image" id="image_upload">
+			<button class="btn" id="submit" type="submit">Guardar</button>	
 			</form>
-			<div id="verify_earning">
-<?php
-	$proceed = false;
-	include 'earning/earning_report.php';
-?>
-			</div>
-			<div id="order">
-				<table id="earning">
-<?php
-	include 'earning/earning_table.php';
-?>
-				</table>
-			</div>
-			<div id="bottom"></br></br></div>
-		</div>		
+		</div>
 	</div>
 	<div id="inventory_display">
 		<div id="btn_inventory">Inventario</div>
@@ -82,12 +61,10 @@
 	require 'inc/inventory.inc.php';
 ?>
 				<tr>
-					<td id="delete"><button class="btn" id="delete" type="submit">Borrar</button></td>
-					<td></td>
+					<td id="delete"><button class="btn" id="submit" type="submit">Borrar</button></td>
 				</tr>
 			</table>
 		</form>
 	</div>
-	<footer></footer>
 </body>
 </html>

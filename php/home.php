@@ -1,5 +1,6 @@
 <?php
 	session_start();
+	require 'inc/style_table.inc.php';
 ?>
 <!DOCTYPE html>
 <html>
@@ -32,7 +33,7 @@
 			<a class="menu" href="earning.php">
 				<li>Ganansias</li>
 			</a>
-			<a class="menu" href="#">
+			<a class="menu" href="notes.php">
 				<li>Notas</li>
 			</a>
 		</ul>

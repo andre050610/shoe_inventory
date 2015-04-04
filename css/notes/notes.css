@@ -1,0 +1,40 @@
+div#notes {
+	/*height: 350px;*/
+	width: 660px;
+	display: inline-block;
+	background-color: grey;
+	margin-top: 15px;
+	margin-left: 220px;
+	z-index: 2;
+	opacity: .9;
+}
+
+h1 {
+	text-align: center;
+	color: white;
+}
+
+span {
+	color: white;
+	margin-left: 100px;
+	margin-right: 50px;
+}
+
+input#image_upload::before {
+	content: 'Escojer Nota';
+	opacity: 1;
+	color: white;
+}
+
+button.btn {
+	height: 28px;
+	width: 100px;
+	color: white;
+	background-image: url("../../images/login_btn.png");
+	background-size: 100px;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	border: 0px;
+	cursor: pointer;
+	margin-left: 20px;
+}

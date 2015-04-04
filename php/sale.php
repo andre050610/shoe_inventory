@@ -33,7 +33,7 @@
 			<a class="menu" href="earning.php">
 				<li>Ganansias</li>
 			</a>
-			<a class="menu" href="#">
+			<a class="menu" href="notes.php">
 				<li>Notas</li>
 			</a>
 		</ul>
