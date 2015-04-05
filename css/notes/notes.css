@@ -1,5 +1,4 @@
 div#notes {
-	/*height: 350px;*/
 	width: 660px;
 	display: inline-block;
 	background-color: grey;
@@ -20,10 +19,13 @@ span {
 	margin-right: 50px;
 }
 
-input#image_upload::before {
-	content: 'Escojer Nota';
-	opacity: 1;
+input#image_upload {
+	opacity: .4;
 	color: white;
+}
+
+input#image_upload:hover {
+	opacity: 1;
 }
 
 button.btn {
@@ -37,4 +39,9 @@ button.btn {
 	border: 0px;
 	cursor: pointer;
 	margin-left: 20px;
+}
+
+div#verify {
+	margin-top: 30px;
+	margin-left: 220px;
 }

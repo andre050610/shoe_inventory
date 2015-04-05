@@ -35,11 +35,16 @@
 		</ul>
 		<div id="notes">
 			<h1>Notas</h1><br/>
-			<form action="#" method="GET" enctype="multipart/form-data">
-			<span>Subir Nota</span>
-			<input type="file" name="image" id="image_upload">
-			<button class="btn" id="submit" type="submit">Guardar</button>	
+			<form action="notes.php" method="POST" enctype="multipart/form-data">
+				<span>Subir Nota</span>
+				<input type="file" name="image" id="image_upload"/>
+				<button class="btn" id="submit" type="submit">Guardar</button>	
 			</form>
+			<div id="verify">
+<?php
+	include 'notes/upload_image.php';
+?>
+			</div>	
 		</div>
 	</div>
 	<div id="inventory_display">
@@ -68,3 +73,18 @@
 	</div>
 </body>
 </html>
+<?php
+	require 'home/delete.php';
+?>
+
+
+
+
+<!--<div id="notes">
+			<!-<h1>Notas</h1><br/>
+			<form action="#" method="GET" enctype="multipart/form-data">
+				<span>Subir Nota</span>
+				<input type="file" name="image" id="image_upload">
+				<button class="btn" id="submit" type="submit">Guardar</button>	
+			</form>
+		</div>-->
