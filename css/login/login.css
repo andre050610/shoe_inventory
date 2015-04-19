@@ -46,3 +46,20 @@ div#login_verify {
 	color: white;
 	margin-left: 40%;
 }
+
+
+
+@media screen and (max-width: 620px) {
+	div#login {
+		margin-top: 70px;
+		margin-left: 0%;
+	}	
+
+	input#username {
+		margin-left: 13px;
+	}
+
+	input#password {
+		margin-left: 13px;
+	}
+}

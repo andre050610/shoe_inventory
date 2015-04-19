@@ -44,7 +44,12 @@
 <?php
 	include 'notes/upload_image.php';
 ?>
-			</div>	
+			</div>
+			<form action="notes.php">
+				<input type="checkbox" name"delete" id="delete">
+				<img src=notes/download_image.php?id=$lastid alt="" width="200" heght="300">
+				<button class="btn" id="submit" type="submit">Borrar</button>
+			</form>
 		</div>
 	</div>
 	<div id="inventory_display">

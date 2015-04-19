@@ -44,4 +44,21 @@ button.btn {
 div#verify {
 	margin-top: 30px;
 	margin-left: 220px;
+	margin-bottom: 30px;
 }
+
+input#delete {
+	margin-left: 160px;
+}
+
+img {
+	margin-left: 30px;
+}
+
+
+
+
+
+/*@media screen and (max-width: 300px) {
+
+}*/

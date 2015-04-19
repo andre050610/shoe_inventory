@@ -10,22 +10,21 @@ div#header {
 
 div#logo_name {
 	color: white;
-	display: inline-block;
-	float: left;
 	margin-left: 380px;
 	margin-top: 40px;
+	position: absolute;
 }
 
 a#logout {
 	height: 50px;
 	width: 50px;
-	float: left;
 	margin-top: 50px;
-	margin-left: 300px;
+	margin-left: 800px;
+	position: absolute;
 }
 
 img#logoff {
 	height: 50px;
 	width: 50px;
-	float: left;
 }
+
