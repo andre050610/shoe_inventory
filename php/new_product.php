@@ -51,6 +51,25 @@
 					<option value="15-17">15-17</option>
 					<option value="18-21">18-21</option>
 				</select><br/><br/>
+				<span>Cantidad</span>
+				<select name="amount" id="amount" class="new">
+					<option label=""></option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+					<option value="13">13</option>
+					<option value="14">14</option>
+					<option value="15">15</option>
+				</select><br/><br/>
 				<span id="retail">Inversion</span><span>$</span>
 				<input type="text" id="retail" name="retail" class="new"><br/><br/><br/>
 				<button class="btn" id="submit" type="submit">Guardar</button>
@@ -72,19 +91,19 @@
 					<tr>
 						<td>
 <?php 
-	if (empty($shoe) || empty($size) || empty($retail))
+	if (empty($shoe) || empty($size) || empty($retail) || empty($amount))
 		echo '-------';
 ?>
 						</td>
 						<td>
 <?php 
-	if (empty($shoe) || empty($size) || empty($retail))
+	if (empty($shoe) || empty($size) || empty($retail) || empty($amount))
 		echo '-------';
 ?>
 						</td>
 						<td>
 <?php 
-	if (!empty($shoe) && !empty($size) && !empty($retail)){
+	if (!empty($shoe) && !empty($size) && !empty($retail) && !empty($amount)){
 		if (is_numeric($retail)){
 			$correct = true;
 		}

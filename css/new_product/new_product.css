@@ -38,6 +38,10 @@ select#size {
 	margin-left: 35px;
 }
 
+select#amount {
+	margin-left: 30px;
+}
+
 span#retail {
 	margin-right: -162px;
 }

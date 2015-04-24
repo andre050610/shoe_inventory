@@ -5,7 +5,7 @@
 	$row_size = array();
 	$row_retail = array();
 
-	if (!$query = "SELECT * FROM inventory WHERE sold IS NULL ORDER BY style ASC"){
+	if (!$query = "SELECT * FROM inventory WHERE sold IS NULL ORDER BY style ASC, size ASC, retail ASC"){
 		echo 'Error en el Query';
 	}
 
