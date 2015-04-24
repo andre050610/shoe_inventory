@@ -1,4 +1,6 @@
 <?php
+	$retail_total = 0;
+	$sale_total = 0;
 	$grand_total = 0;
 	$total_earn = 0;
 
@@ -37,19 +39,28 @@
 							$header = true;
 						}
 
-						table_row($mysqli_num_rows, $header, $start, $date_1, $shoe, $size, $retail, $sale, $earning, $total_earn);
+						table_row($mysqli_num_rows, $header, $start, $date_1, $shoe, $size, $retail, $sale, $earning, $retail_total, $sale_total, $total_earn);
 						$date_2 = $date_1;
 						$start = false;
+						$retail_total += $retail;
+						$sale_total += $sale;
 						$total_earn += $earning;
 						$grand_total += $earning;
 					}
 
 					echo '<tr>
-							<td></td>
-							<td></td>
+							<td>------------------</td>
+							<td>----------------------</td>
+							<td>-------------------------</td>
+							<td>---------------------</td>
+							<td>------------------------</td>
+						</tr>
+						<tr>
 							<td></td>
 							<td>TOTAL</td>
-							<td>$'.$total_earn.'</td>
+							<td>$'.$retail_total.'</td>
+							<td>$'.$sale_total.'</td>
+							<td>~$'.$total_earn.'~</td>
 						</tr>
 						<tr>
 							<td></td>
@@ -64,18 +75,29 @@
 	}
 
 
-	function table_row($rows, $header, $start, $date, $shoe, $size, $retail, $sale, $earning, $total){
+	function table_row($rows, $header, $start, $date, $shoe, $size, $retail, $sale, $earning, $r_total, $s_total, $total){
 		if ($rows > 0 && $header){
 			if ($start != true){
 				echo '<tr>
-						<td></td>
-						<td></td>
+						<td>------------------</td>
+						<td>----------------------</td>
+						<td>-------------------------</td>
+						<td>---------------------</td>
+						<td>------------------------</td>
+					</tr>
+					<tr>
 						<td></td>
 						<td>TOTAL</td>
-						<td>$'.$total.'</td>
+						<td>$'.$r_total.'</td>
+						<td>$'.$s_total.'</td>
+						<td>~$'.$total.'~</td>
 					</tr>';
+				global $retail_total;
+				global $sale_total;
 				global $total_earn;
 				$total_earn = 0;
+				$retail_total = 0;
+				$sale_total = 0;
 			}
 
 			echo '<tr>
