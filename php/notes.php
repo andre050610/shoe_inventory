@@ -10,6 +10,7 @@
 	<script type="text/javascript" src="../js/jquery/jquery2.js"></script>
 	<script type="text/javascript" src="../js/jquery/jquery-ui.js"></script>
 	<script type="text/javascript" src="../js/menu/menu.js"></script>
+	<script type="text/javascript" src="../js/notes/notes.js"></script>
 	<script type="text/javascript" src="../js/inventory/inventory.js"></script>
 </head>
 <body>
@@ -38,17 +39,18 @@
 			<form action="notes.php" method="POST" enctype="multipart/form-data">
 				<span>Subir Nota</span>
 				<input type="file" name="image" id="image_upload"/>
-				<button class="btn" id="submit" type="submit">Guardar</button>	
+				<button class="btn" id="submit" name="upload" type="submit">Guardar</button>	
 			</form>
 			<div id="verify">
 <?php
 	include 'notes/upload_image.php';
 ?>
 			</div>
-			<form action="notes.php">
-				<input type="checkbox" name"delete" id="delete">
-				<img src=notes/download_image.php?id=$lastid alt="" width="200" heght="300">
-				<button class="btn" id="submit" type="submit">Borrar</button>
+			<form action="notes/delete_image.php" method="get">
+<?php
+	include 'notes/download_image.php';
+?>
+				<button class="btn" id="submit" name="" type="submit">Borrar</button>
 			</form>
 		</div>
 	</div>
